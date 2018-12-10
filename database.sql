@@ -31,7 +31,7 @@ CREATE TABLE `books` (
   `barcode` varchar(255) NOT NULL DEFAULT '',
   `comments` tinytext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -40,7 +40,6 @@ CREATE TABLE `books` (
 
 LOCK TABLES `books` WRITE;
 /*!40000 ALTER TABLE `books` DISABLE KEYS */;
-INSERT INTO `books` VALUES (8,'asd','asd','','','123','');
 /*!40000 ALTER TABLE `books` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -58,7 +57,7 @@ CREATE TABLE `borrow_current` (
   `borrowed_date` int(255) NOT NULL,
   `due_time` int(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -85,7 +84,7 @@ CREATE TABLE `borrow_history` (
   `due_time` int(255) NOT NULL,
   `return_date` int(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -94,7 +93,6 @@ CREATE TABLE `borrow_history` (
 
 LOCK TABLES `borrow_history` WRITE;
 /*!40000 ALTER TABLE `borrow_history` DISABLE KEYS */;
-INSERT INTO `borrow_history` VALUES (1,6,8,1541073098,1296000,1541076291),(2,6,8,1541073098,1296000,1541076317);
 /*!40000 ALTER TABLE `borrow_history` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,7 +108,7 @@ CREATE TABLE `members` (
   `fullname` varchar(255) NOT NULL DEFAULT '',
   `schoolnumber` int(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 COMMENT='latin1_swedish_ci';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +117,6 @@ CREATE TABLE `members` (
 
 LOCK TABLES `members` WRITE;
 /*!40000 ALTER TABLE `members` DISABLE KEYS */;
-INSERT INTO `members` VALUES (6,'cagri',123);
 /*!40000 ALTER TABLE `members` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
