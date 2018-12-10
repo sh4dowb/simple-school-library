@@ -1,4 +1,4 @@
-# simple-school-library
+# Simple School Library Management System
 
 Tested under:
 
