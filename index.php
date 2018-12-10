@@ -43,7 +43,6 @@ if(strlen($_POST['schoolnumber']) > 1 && strlen($_POST['barcode']) > 0){
                     $ok = true;
 
                 if($ok){
-                    var_dump($studentdata);
                     if(mysqli_query($con, "INSERT INTO borrow_current VALUES (NULL, '$studentdata[id]', '$data[id]', '".time()."', '$duetime')"))
                         $alert = '<div class="alert alert-success">Book borrowed, ID: #'.mysqli_insert_id($con).'</div>';
                     else
